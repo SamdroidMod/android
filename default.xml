@@ -7,7 +7,7 @@
   <default revision="froyo"
            remote="korg" />
 
-  <project path="build" name="leshak/android_build" remote="github">
+  <project path="build" name="SamdroidMod/android_build" remote="github">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
@@ -108,7 +108,7 @@
 
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" />
   <project path="hardware/libhardware" name="platform/hardware/libhardware" />
-  <project path="hardware/libhardware_legacy" name="leshak/android_libhardware_legacy" remote="github" />
+  <project path="hardware/libhardware_legacy" name="SamdroidMod/android_libhardware_legacy" remote="github" />
   <project path="hardware/msm7k" name="platform/hardware/msm7k" />
   <project path="hardware/qcom/gps" name="platform/hardware/qcom/gps" />
   <project path="hardware/ril" name="platform/hardware/ril" />
@@ -176,6 +176,6 @@
   <project path="external/alsa-utils" name="platform/external/alsa-utils"/>
   <project path="hardware/alsa_sound" name="platform/hardware/alsa_sound"/>
 
-  <project path="vendor/leshak" name="leshak/android_vendor_leshak" remote="github" />
+  <project path="vendor/leshak" name="SamdroidMod/android_vendor_spica" remote="github" />
 
 </manifest>
