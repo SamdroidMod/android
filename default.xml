@@ -176,6 +176,6 @@
   <project path="external/alsa-utils" name="platform/external/alsa-utils"/>
   <project path="hardware/alsa_sound" name="platform/hardware/alsa_sound"/>
 
-  <project path="vendor/leshak" name="SamdroidMod/android_vendor_spica" remote="github" />
+  <project path="vendor/spica" name="SamdroidMod/android_vendor_spica" remote="github" />
 
 </manifest>
