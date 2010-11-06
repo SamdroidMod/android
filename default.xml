@@ -171,7 +171,7 @@
   <project path="packages/wallpapers/MagicSmoke" name="platform/packages/wallpapers/MagicSmoke" />
   <project path="packages/wallpapers/MusicVisualization" name="platform/packages/wallpapers/MusicVisualization" />
 
-  <project path="prebuilt" name="platform/prebuilt" />
+  <project path="prebuilt" name="platform/prebuilt" revision="master" />
   <project path="sdk" name="platform/sdk" revision="tools_r6"/>
   <project path="system/bluetooth" name="SamdroidMod/android_system_bluetooth" remote="github" />
   <project path="system/core" name="SamdroidMod/android_system_core" remote="github" />
