@@ -15,7 +15,7 @@
 
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
   <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" />
-  <project path="bootable/recovery" name="platform/bootable/recovery" />
+  <project path="bootable/recovery" name="SamdroidMod/android_bootable_recovery" remote="github" />
 
   <project path="cts" name="platform/cts" />
   <project path="dalvik" name="platform/dalvik" />
