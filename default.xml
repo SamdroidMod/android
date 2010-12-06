@@ -177,7 +177,7 @@
   <project path="system/bluetooth" name="SamdroidMod/android_system_bluetooth" remote="github" />
   <project path="system/core" name="SamdroidMod/android_system_core" remote="github" />
   <project path="system/extras" name="SamdroidMod/android_system_extras" remote="github" />
-  <project path="system/netd" name="platform/system/netd" />
+  <project path="system/netd" name="SamdroidMod/android_system_netd" remote="github" />
   <project path="system/vold" name="SamdroidMod/android_system_vold" remote="github" />
   <project path="system/wlan/ti" name="platform/system/wlan/ti" />
 
