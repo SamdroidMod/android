@@ -6,7 +6,7 @@ familiar with [Git and Repo](http://source.android.com/download/using-repo).
 
 To initialize your local repository using the LeshaK's trees, use a command like this:
 
-    repo init -u git://github.com/SamdroidMod/android.git -b froyo
+    repo init -u git://github.com/SamdroidMod/android.git -b gingerbread
 
 Then to sync up:
 
