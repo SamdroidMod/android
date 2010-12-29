@@ -175,4 +175,6 @@
   <project path="system/vold" name="SamdroidMod/android_system_vold" remote="github" />
   <project path="system/wlan/ti" name="platform/system/wlan/ti" />
 
+  <project path="vendor/spica" name="SamdroidMod/android_vendor_spica" remote="github" />
+  
 </manifest>
