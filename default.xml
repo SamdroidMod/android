@@ -7,7 +7,7 @@
   <default revision="gingerbread"
            remote="korg" />
 
-  <project path="build" name="platform/build">
+  <project path="build" name="SamdroidMod/android_build" remote="github">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="bionic" name="platform/bionic" />
