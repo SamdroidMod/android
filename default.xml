@@ -180,7 +180,7 @@
   
   <project path="system/bluetooth" name="platform/system/bluetooth" />
   <project path="system/core" name="SamdroidMod/android_system_core" remote="github" />
-  <project path="system/extras" name="platform/system/extras" />
+  <project path="system/extras" name="SamdroidMod/android_system_extras" remote="github" />
   <project path="system/media" name="platform/system/media" />
   <project path="system/netd" name="platform/system/netd" />
   <project path="system/vold" name="SamdroidMod/android_system_vold" remote="github" />
