@@ -4,24 +4,31 @@
            fetch="git://android.git.kernel.org/"
            review="review.source.android.com" />
   <remote name="github" fetch="git://github.com/" />
-  <default revision="froyo"
+
+  <default revision="refs/tags/android-2.2.2_r1"
            remote="korg" />
 
-  <project path="build" name="SamdroidMod/android_build" remote="github">
+  <project path="build" name="platform/build">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
-  <project path="bionic" name="CyanogenMod/android_bionic" remote="github" />
+  <project path="bionic" name="platform/bionic" />
 
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
   <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" />
-  <project path="bootable/recovery" name="SamdroidMod/android_bootable_recovery" remote="github" />
+  <project path="bootable/recovery" name="SamdroidMod/android_bootable_recovery" remote="github" revision="froyo" />
 
   <project path="cts" name="platform/cts" />
   <project path="dalvik" name="platform/dalvik" />
   <project path="development" name="platform/development" />
 
   <project path="device/common" name="device/common" />
+  <project path="device/htc/common" name="device/htc/common" />
+  <project path="device/htc/dream" name="device/htc/dream" />
+  <project path="device/htc/dream-sapphire" name="device/htc/dream-sapphire" />
+  <project path="device/htc/passion" name="device/htc/passion" />
+  <project path="device/htc/passion-common" name="device/htc/passion-common" />
+  <project path="device/htc/sapphire" name="device/htc/sapphire" />
   <project path="device/sample" name="device/sample" />
 
   <project path="external/apache-http" name="platform/external/apache-http" />
@@ -33,7 +40,7 @@
   <project path="external/bluetooth/glib" name="platform/external/bluetooth/glib" />
   <project path="external/bluetooth/hcidump" name="platform/external/bluetooth/hcidump" />
   <project path="external/bsdiff" name="platform/external/bsdiff" />
-  <project path="external/busybox" name="CyanogenMod/android_external_busybox" remote="github" />
+  <project path="external/busybox" name="CyanogenMod/android_external_busybox" remote="github" revision="froyo" />
   <project path="external/bzip2" name="platform/external/bzip2" />
   <project path="external/clearsilver" name="platform/external/clearsilver" />
   <project path="external/dbus" name="platform/external/dbus" />
@@ -72,28 +79,28 @@
   <project path="external/libpng" name="platform/external/libpng" />
   <project path="external/libxml2" name="platform/external/libxml2" />
   <project path="external/lzo" name="fries/android-external-liblzo" revision="master" remote="github" />
-  <project path="external/mtpd" name="CyanogenMod/android_external_mtpd" remote="github" />
+  <project path="external/mtpd" name="CyanogenMod/android_external_mtpd" remote="github" revision="froyo" />
   <project path="external/nano" name="CyanogenMod/android_external_nano" remote="github" revision="nano-2.2.4-froyo" />
+  <project path="external/mtpd" name="platform/external/mtpd" />
   <project path="external/netcat" name="platform/external/netcat" />
   <project path="external/netperf" name="platform/external/netperf" />
   <project path="external/neven" name="platform/external/neven" />
-  <project path="external/opencore" name="SamdroidMod/android_platform_external_opencore" remote="github" />
+  <project path="external/opencore" name="platform/external/opencore" />
   <project path="external/openssl" name="platform/external/openssl" />
-  <project path="external/oprofile" name="platform/external/oprofile" />
   <project path="external/openvpn" name="CyanogenMod/android_external_openvpn" remote="github" revision="master" />
+  <project path="external/oprofile" name="platform/external/oprofile" />
   <project path="external/ping" name="platform/external/ping" />
   <project path="external/ppp" name="platform/external/ppp" />
   <project path="external/proguard" name="platform/external/proguard" />
-  <project path="external/qemu" name="platform/external/qemu" revision="tools_r6"/>
+  <project path="external/qemu" name="platform/external/qemu" />
   <project path="external/quake" name="platform/external/quake" />
-  <project path="external/rsync" name="dylex/android_external_rsync" remote="github" revision="master" />
   <project path="external/safe-iop" name="platform/external/safe-iop" />
   <project path="external/skia" name="platform/external/skia" />
   <project path="external/sonivox" name="platform/external/sonivox" />
   <project path="external/speex" name="platform/external/speex" />
   <project path="external/sqlite" name="platform/external/sqlite" />
   <project path="external/srec" name="platform/external/srec" />
-  <project path="external/stlport" name="platform/external/stlport" revision="c2afec726ce42ded67f2f5f41ec87d77cd6d2d34"/>
+  <project path="external/stlport" name="platform/external/stlport" />
   <project path="external/strace" name="platform/external/strace" />
   <project path="external/svox" name="platform/external/svox" />
   <project path="external/tagsoup" name="platform/external/tagsoup" />
@@ -101,22 +108,21 @@
   <project path="external/tinyxml" name="platform/external/tinyxml" />
   <project path="external/tremolo" name="platform/external/tremolo" />
   <project path="external/v8" name="platform/external/v8" />
-  <project path="external/webkit" name="SamdroidMod/android_platform_external_webkit" remote="github" />
-  <project path="external/wireless-tools" name="CyanogenMod/android_external_wireless-tools" remote="github" revision="master" />
+  <project path="external/webkit" name="platform/external/webkit" />
   <project path="external/wpa_supplicant" name="platform/external/wpa_supplicant" />
-  <project path="external/wpa_supplicant_6" name="SamdroidMod/android_external_wpa_supplicant_6" remote="github" />
+  <project path="external/wpa_supplicant_6" name="platform/external/wpa_supplicant_6" />
   <project path="external/xmlwriter" name="platform/external/xmlwriter" />
-  <project path="external/yaffs2" name="CyanogenMod/android_external_yaffs2" remote="github" />
+  <project path="external/yaffs2" name="platform/external/yaffs2" />
   <project path="external/zlib" name="platform/external/zlib" />
 
-  <project path="frameworks/base" name="SamdroidMod/android_frameworks_base" remote="github" />
+  <project path="frameworks/base" name="platform/frameworks/base" />
   <project path="frameworks/ex" name="platform/frameworks/ex" />
   <project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji" />
-  <project path="frameworks/policies/base" name="SamdroidMod/android_frameworks_policies_base" remote="github" />
+  <project path="frameworks/policies/base" name="platform/frameworks/policies/base" />
 
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" />
   <project path="hardware/libhardware" name="platform/hardware/libhardware" />
-  <project path="hardware/libhardware_legacy" name="SamdroidMod/android_libhardware_legacy" remote="github" />
+  <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" />
   <project path="hardware/msm7k" name="platform/hardware/msm7k" />
   <project path="hardware/qcom/gps" name="platform/hardware/qcom/gps" />
   <project path="hardware/ril" name="platform/hardware/ril" />
@@ -126,6 +132,7 @@
   <project path="ndk" name="platform/ndk" />
 
   <project path="packages/apps/AccountsAndSyncSettings" name="platform/packages/apps/AccountsAndSyncSettings" />
+  <project path="packages/apps/ADWLauncher" name="CyanogenMod/android_packages_apps_ADWLauncher" remote="github" revision="froyo" />
   <project path="packages/apps/AlarmClock" name="platform/packages/apps/AlarmClock" />
   <project path="packages/apps/Bluetooth" name="platform/packages/apps/Bluetooth" />
   <project path="packages/apps/Browser" name="platform/packages/apps/Browser" />
@@ -140,8 +147,8 @@
   <project path="packages/apps/Gallery" name="platform/packages/apps/Gallery" />
   <project path="packages/apps/Gallery3D" name="SamdroidMod/android_packages_apps_Gallery3D" remote="github" revision="froyo_spica" />
   <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" />
+  <project path="packages/apps/IM" name="platform/packages/apps/IM" />
   <project path="packages/apps/Launcher2" name="platform/packages/apps/Launcher2" />
-  <project path="packages/apps/ADWLauncher" name="CyanogenMod/android_packages_apps_ADWLauncher" remote="github" />
   <project path="packages/apps/Mms" name="platform/packages/apps/Mms" />
   <project path="packages/apps/Music" name="platform/packages/apps/Music" />
   <project path="packages/apps/PackageInstaller" name="platform/packages/apps/PackageInstaller" />
@@ -149,11 +156,10 @@
   <project path="packages/apps/Protips" name="platform/packages/apps/Protips" />
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" />
   <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" />
-  <project path="packages/apps/Settings" name="SamdroidMod/android_packages_apps_settings" remote="github" />
+  <project path="packages/apps/Settings" name="platform/packages/apps/Settings" />
   <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" />
   <project path="packages/apps/SpeechRecorder" name="platform/packages/apps/SpeechRecorder" />
   <project path="packages/apps/Stk" name="platform/packages/apps/Stk" />
-  <project path="packages/apps/Superuser" name="CyanogenMod/android_packages_apps_Superuser" remote="github" revision="master" />
   <project path="packages/apps/VoiceDialer" name="platform/packages/apps/VoiceDialer" />
   <project path="packages/experimental" name="platform/packages/experimental" />
   <project path="packages/inputmethods/LatinIME" name="platform/packages/inputmethods/LatinIME" />
@@ -173,18 +179,14 @@
   <project path="packages/wallpapers/MagicSmoke" name="platform/packages/wallpapers/MagicSmoke" />
   <project path="packages/wallpapers/MusicVisualization" name="platform/packages/wallpapers/MusicVisualization" />
 
-  <project path="prebuilt" name="platform/prebuilt" revision="master" />
-  <project path="sdk" name="platform/sdk" revision="tools_r6"/>
-  <project path="system/bluetooth" name="SamdroidMod/android_system_bluetooth" remote="github" />
-  <project path="system/core" name="SamdroidMod/android_system_core" remote="github" />
-  <project path="system/extras" name="SamdroidMod/android_system_extras" remote="github" />
-  <project path="system/netd" name="SamdroidMod/android_system_netd" remote="github" />
-  <project path="system/vold" name="SamdroidMod/android_system_vold" remote="github" />
+  <project path="prebuilt" name="platform/prebuilt" />
+  <project path="sdk" name="platform/sdk" />
+  <project path="system/bluetooth" name="platform/system/bluetooth" />
+  <project path="system/core" name="platform/system/core" />
+  <project path="system/extras" name="platform/system/extras" />
+  <project path="system/netd" name="platform/system/netd" />
+  <project path="system/vold" name="platform/system/vold" />
   <project path="system/wlan/ti" name="platform/system/wlan/ti" />
-
-  <project path="external/alsa-lib" name="platform/external/alsa-lib"/>
-  <project path="external/alsa-utils" name="platform/external/alsa-utils"/>
-  <project path="hardware/alsa_sound" name="SamdroidMod/android_hardware_alsa_sound" remote="github" />
 
   <project path="vendor/spica" name="SamdroidMod/android_vendor_spica" remote="github" />
 
