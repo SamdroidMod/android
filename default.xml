@@ -115,7 +115,7 @@
   <project path="external/yaffs2" name="platform/external/yaffs2" />
   <project path="external/zlib" name="platform/external/zlib" />
 
-  <project path="frameworks/base" name="platform/frameworks/base" />
+  <project path="frameworks/base" name="SamdroidMod/android_frameworks_base" remote="github" revision="froyo_2r1" />
   <project path="frameworks/ex" name="platform/frameworks/ex" />
   <project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji" />
   <project path="frameworks/policies/base" name="platform/frameworks/policies/base" />
