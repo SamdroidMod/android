@@ -8,7 +8,7 @@
   <default revision="refs/tags/android-2.2.2_r1"
            remote="korg" />
 
-  <project path="build" name="platform/build">
+  <project path="build" name="SamdroidMod/android_build" remote="github" revision"froyo" />
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
