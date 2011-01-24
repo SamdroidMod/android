@@ -177,7 +177,7 @@
 
   <project path="prebuilt" name="platform/prebuilt" />
   <project path="sdk" name="platform/sdk" />
-  <project path="system/bluetooth" name="platform/system/bluetooth" />
+  <project path="system/bluetooth" name="SamdroidMod/android_system_bluetooth" remote="github" revision="froyo" />
   <project path="system/core" name="SamdroidMod/android_system_core" remote="github" revision="froyo_2r1" />
   <project path="system/extras" name="platform/system/extras" />
   <project path="system/netd" name="SamdroidMod/android_system_netd" remote="github" revision="froyo_2r1" />
