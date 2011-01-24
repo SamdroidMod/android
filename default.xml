@@ -112,7 +112,7 @@
   <project path="frameworks/base" name="SamdroidMod/android_frameworks_base" remote="github" revision="froyo_2r1" />
   <project path="frameworks/ex" name="platform/frameworks/ex" />
   <project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji" />
-  <project path="frameworks/policies/base" name="platform/frameworks/policies/base" />
+  <project path="frameworks/policies/base" name="SamdroidMod/android_frameworks_policies_base" remote="github" revision="froyo" />
 
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" />
   <project path="hardware/libhardware" name="platform/hardware/libhardware" />
