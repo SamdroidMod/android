@@ -180,7 +180,7 @@
   <project path="system/bluetooth" name="platform/system/bluetooth" />
   <project path="system/core" name="SamdroidMod/android_system_core" remote="github" revision="froyo_2r1" />
   <project path="system/extras" name="platform/system/extras" />
-  <project path="system/netd" name="platform/system/netd" />
+  <project path="system/netd" name="SamdroidMod/android_system_netd" remote="github" revision="froyo_2r1" />
   <project path="system/vold" name="platform/system/vold" />
   <project path="system/wlan/ti" name="platform/system/wlan/ti" />
 
